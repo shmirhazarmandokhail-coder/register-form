@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,  sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1598d4, #19d39b);
+        }
+
+        .form-box{
+            width: 360px;
+            padding: 35px 40px;
+            background: white;
+            box-shadow: 0 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .form-box h2{
+            text-align: center;
+           color: #4c9fco;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .input-box{
+            width: 100%;
+           border: none;
+            border-bottom: 2px solid #c8e2df;
+           padding: 10px 0;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .input-box input:focus{
+            border-color: #28abc7;
+        }
+
+        .check{
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            margin: 10px 0 25px;
+            color: #999;
+            gap: 8px;
+        }
+        
+        .check input{
+           width: 15px;
+            height: 15px;
+        }
+
+        .btn{
+            width: 100%;
+            background: #2798d5;
+            border: none;
+            padding: 14px 0;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            letter-spacing: 2px;
+        }
+        .btn:hover{
+            background: #168eaa;
+        }
+
+        .login{
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+            color: #999;
+        }
+
+        .login a{
+            color: #269fbd;
+            text-decoration: none;
+        }
+ </style>
+</head>
+<body>
+
+    <div class="form-box">
+
+        <h2>Registration form</h2>
+
+        <form>
+
+            <div class="input-box">
+                <input type="text"
+placeholder="Name"
+            </div>
+
+     <div class="input-box">
+                <input type="email" placeholder="Email">
+            </div>
+    <div class="input-box">
+        <input type="text"
+placeholder="country">
+            </div>
+
+            <div class="input-box">
+                <input type="tel" placeholder="phone">
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password">
+            </div>
+
+            <label class="check">
+                <input type="checkbox"> I agree to the terms and conditions
+            </label>
+
+            <button class="btn"type="submit">
+                create account
+            </button>
+               
+        <p class="login">Already have an account? <a href="#">signin</a>
+        </p>
+    </form>
+    </div>
+
+</body>
+</html>
